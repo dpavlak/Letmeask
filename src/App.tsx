@@ -1,7 +1,13 @@
 import { Button } from "./components/Button";
 
 function App() {
-  <Button text="Botão 1" />;
+  return (
+    <div>
+      <Button />
+      <Button />
+      <Button />
+    </div>
+  );
 }
 
 export default App;
