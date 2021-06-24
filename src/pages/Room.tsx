@@ -1,4 +1,5 @@
 import { FormEvent, useState, useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { useParams } from "react-router";
 
 import logoImg from "../assets/images/logo.svg";
@@ -79,26 +80,30 @@ export function Room() {
     }
 
     if (!user) {
-      throw new Error("You must be logged in");
+      toast.error("ERROR. You must be logged in");
     }
 
     const question = {
       content: newQuestion,
       author: {
         name: user?.name,
-        avatar: user.avatar,
+        avatar: user?.avatar,
       },
       isHighlighted: false,
       isAnswer: false,
     };
 
     await database.ref(`rooms/${roomId}/questions`).push(question);
+    toast.success("Your question has been sended");
 
     setNewQuestion("");
   }
 
   return (
     <div id="page-room">
+      <div>
+        <Toaster position="top-center" reverseOrder={false} />
+      </div>
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
