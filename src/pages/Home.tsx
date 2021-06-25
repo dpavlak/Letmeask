@@ -12,6 +12,7 @@ import googleIconImg from "../assets/images/google-icon.svg";
 import { Button } from "../components/Button";
 
 import "../styles/auth.scss";
+import toast, { Toaster } from "react-hot-toast";
 
 export function Home() {
   const history = useHistory();
@@ -39,11 +40,19 @@ export function Home() {
       return;
     }
 
+    if (roomRef.val().endedAt) {
+      toast.error("Sorry, this room is already close");
+      return;
+    }
+
     history.push(`/rooms/${roomCode}`);
   }
 
   return (
     <div id="page-auth">
+      <div>
+        <Toaster position="top-center" reverseOrder={false} />
+      </div>
       <aside>
         <img
           src={illustrationImg}
