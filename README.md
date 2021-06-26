@@ -37,13 +37,13 @@ $ cd letmeask-nwl
 $ yarn install
 
 # É necessario configurar o SDK do Firebase
-    - Acesse o site do firebase, faça o login com sua conta
-    - Crie um novo projeto com o nome que você preferir.
-    - Na aba de autenticação, ative a autenticação com contas Google.
-    - Na aba "Realtime Database" crie um novo banco de dados.
-    - Registre esse banco para ser utilizado como uma aplicação web
+    # Acesse o site do firebase, faça o login com sua conta
+    # Crie um novo projeto com o nome que você preferir.
+    # Na aba de autenticação, ative a autenticação com contas Google.
+    # Na aba "Realtime Database" crie um novo banco de dados.
+    # Registre esse banco para ser utilizado como uma aplicação web
       em "visão geral do projeto".
-    - Agora basta esperar, e, prontinho! Logo em seguida seram
+    # Agora basta esperar, e, prontinho! Logo em seguida seram
       disponibilizadas as informações que precisamos.
 
 # Siga o modelo do arquivo .env.example
