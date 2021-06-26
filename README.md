@@ -42,9 +42,9 @@ $ yarn install
     # Na aba de autenticação, ative a autenticação com contas Google.
     # Na aba "Realtime Database" crie um novo banco de dados.
     # Registre esse banco para ser utilizado como uma aplicação web
-      em "visão geral do projeto".
+    # em "visão geral do projeto".
     # Agora basta esperar, e, prontinho! Logo em seguida seram
-      disponibilizadas as informações que precisamos.
+    # disponibilizadas as informações que precisamos.
 
 # Siga o modelo do arquivo .env.example
 # Preencha os campos com suas respectivas informações do seu banco
