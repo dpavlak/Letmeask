@@ -12,7 +12,6 @@ O projeto **letmeask** é um sistema proposto e desenvolvido no evento NLW-Toget
 Teste a demo <a href="https://letmeask-6d6cf.web.app">clicando aqui</a><br>
 Para acessar as funcionalidades de admin adicione "/admin" na url antes de "/room", como por exemplo: <span style="color: rgb(71, 202, 84)">/admin/rooms/CODIGO_DA_SALA
 
----
 
 ## 📚 Tecnologias Utilizadas
 
@@ -20,7 +19,6 @@ Para acessar as funcionalidades de admin adicione "/admin" na url antes de "/roo
 - [Firebase](https://firebase.google.com/?hl=pt)
 - [TypeScript](https://www.typescriptlang.org)
 
----
 
 ## 👨‍💻 Como baixar, editar e utilizar
 
@@ -56,7 +54,6 @@ $ yarn install
 $ yarn start
 ```
 
----
 
 ## ✅ Done
 
